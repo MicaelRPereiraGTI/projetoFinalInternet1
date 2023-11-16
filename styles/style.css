@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+header{
+    background-color: blue;
+    display: flex;
+    padding: 0 10%;
+    
+}
