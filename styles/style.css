@@ -9,24 +9,27 @@
 
 body{
     background-color: rgb(255, 255, 255);
-    height: 100vh;
 }
-
 
 .interface{
     max-width: 80%;
     height: 100%;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .display-flex-generic{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
+
 
 /* Estilização do Cabeçalho e Menu de Navegação */
 
 header{
-    padding: 40px 4%;
+    padding: 20px 10%;
 }
 
 header > .interface{
@@ -39,13 +42,16 @@ header a {
     color: #7d7d7d;
     text-decoration: none;
     display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
     transition: .2s;
 }
 
 header a:hover {
     color: #107d20;
-    font-size: large;
+    font-size: 20px;
     text-decoration: none;
+    cursor: pointer;
     transform: scale(1.05);
 }
 
@@ -64,37 +70,82 @@ header nav ul li{
     border-radius: 5px;
 }
 
+.img-carrinho img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilização do Footer */
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #107d20;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.footer-content p {
+    margin: 0 0 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
 
 /* Estilização topo home page do site */
-section .home-page{
-    width: 100vw;
-    padding: 40px 4%;
+
+.col-esquerda {
+    background-color: #ffffff; /* Cor de fundo da caixa flutuante */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombreamento leve */
+    padding: 20px; /* Espaçamento interno */
+    width: 70%;
 }
 
-section .home-page .display-flex-generic{
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-    width: 100%;
-}
-
-.home-page h1{
+.col-esquerda h1 {
     color: #000000;
-    font-size: 38px;
+    font-size: 30px;
+    margin: 0px 2px;
 }
 
-.home-page h1 span{
+.col-esquerda h1 span {
     color: #107d20;
     text-decoration: underline;
 }
 
-.home-page .interface .display-flex-generic .texto-home-page{
-    background-color: blue;
-    width: 60%;
+.col-esquerda p {
+    color: #000000;
+    margin-top: 10px;
 }
 
-.home-page .interface .display-flex-generic .video-home-page{
-    background-color: yellow;
+.col-direita {
     width: 40%;
+}
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.col-direita {
+    position: relative;
+    width: 40%;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Ajuste a altura da flutuação conforme necessário */
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    animation: floatAnimation 2s infinite; /* Ajuste a duração e o número de repetições conforme necessário */
 }

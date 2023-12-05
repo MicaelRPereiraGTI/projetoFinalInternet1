@@ -1,0 +1,23 @@
+.sobre {
+    width: 100vw;
+    padding: 40px 4%;
+}
+
+.sobre .col-esquerda {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    color: #107d20;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.sobre p {
+    color: #000000;
+    margin-bottom: 20px;
+}

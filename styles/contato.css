@@ -1,0 +1,50 @@
+/* Estilização específica para a página "Contato" */
+
+.contato {
+    width: 100vw;
+    padding: 40px 4%;
+}
+
+.contato .col-esquerda {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contato h2 {
+    color: #000000;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contato label {
+    color: #000000;
+    font-size: 18px;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #107d20;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
