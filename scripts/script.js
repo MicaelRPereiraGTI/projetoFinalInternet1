@@ -47,4 +47,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         return quantidadeTotal;
     }
+
+    var currentLocation = window.location.href;
+
+    document.querySelectorAll(".navbar-desk a").forEach(function (link) {
+        if (currentLocation.includes(link.getAttribute("href"))) {
+            link.parentNode.classList.add("active");
+        }
+    });
 });
